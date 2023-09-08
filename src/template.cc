@@ -5,6 +5,11 @@ namespace smov {
 void TemplateState::on_start() {
   // This will be called when the node starts running.
   whats_up_world();
+
+  // If your program consists just of a function 
+  // not requiring any loop, on can directly end 
+  // the program by using this function:
+  // end_program();
 }
 
 void TemplateState::on_loop() {
