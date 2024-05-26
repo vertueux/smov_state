@@ -1,7 +1,5 @@
 #include <template/template.h>
 
-namespace smov {
-
 void TemplateState::on_start() {
   // This will be called when the node starts running.
   whats_up_world();
@@ -27,7 +25,5 @@ void TemplateState::whats_up_world() {
   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "What's up world ?");
 }
 
-}
-
 // This macro creates the node and the main() input, which spins the node.
-DECLARE_STATE_NODE_CLASS("smov_template_state", smov::TemplateState, 500ms)
+DECLARE_STATE_NODE_CLASS("smov_template_state", TemplateState, 500ms)
